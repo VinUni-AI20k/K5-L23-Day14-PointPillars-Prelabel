@@ -7,7 +7,7 @@
 
 ## 1. Dự đoán trước sweep (bước 5b)
 
-Ghi **trước** khi chạy `pp_sweep.py`. Không sửa phần này sau khi có kết quả.
+Ghi **trước** khi chạy `pp_sweep.py`, rồi commit và push ngay (lịch sử commit là bằng chứng thời điểm viết). Không sửa phần này sau khi có kết quả.
 
 - Tham số tôi nghĩ giảm công sửa nhiều nhất: ...
 - Vì sao (nhìn ảnh BEV tập A: box thừa nhiều hay box sót nhiều?): ...

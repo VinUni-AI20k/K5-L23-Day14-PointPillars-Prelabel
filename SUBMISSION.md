@@ -1,6 +1,6 @@
 # Nộp bài Day 14 — Pre-label 3D bằng PointPillars
 
-Bài **cá nhân**. Mỗi học viên nộp **link một repo GitHub** lên LMS.
+Bài **cá nhân**. Mỗi học viên nộp **link tới commit bài nộp** trong repo GitHub của mình lên LMS.
 
 ## 1. Repo nộp
 
@@ -12,7 +12,9 @@ Bài **cá nhân**. Mỗi học viên nộp **link một repo GitHub** lên LMS.
   git remote set-url origin https://github.com/<tài-khoản>/K5-L23-DAY14-HoVaTen-MSSV-PointPillarsPrelabel.git
   git add d14_<ID> report
   git commit -m "Day 14: bài nộp"
+  git branch -M main
   git push -u origin main
+  git rev-parse HEAD   # SHA của commit bài nộp
   ```
 - Nếu để repo ở chế độ Private, mời tài khoản GitHub của coach (công bố trên lớp) vào repo trước khi nộp.
 
@@ -33,15 +35,18 @@ Không commit: thư mục dữ liệu `Data-VF`, `third_party/`, mật khẩu CV
 
 ## 3. Nơi nộp và deadline
 
-- Nộp **link repo** lên LMS, bằng tài khoản của chính bạn.
+- Nộp lên LMS, bằng tài khoản của chính bạn, **link commit** dạng `https://github.com/<tài-khoản>/<repo>/commit/<SHA>` (SHA lấy từ `git rev-parse HEAD` sau khi push). Coach chấm đúng commit này, không chấm nhánh `main` lúc mở repo.
+- Sửa bài trước deadline: push commit mới rồi cập nhật link commit trên LMS. Không force-push, không xóa commit đã nộp.
 - Deadline: **12:00 trưa ngày hôm sau ngày lab** (giờ Việt Nam, GMT+7).
 - Nộp muộn và sửa bài sau deadline: xem [RULES.md](RULES.md).
 
 ## 4. Tự kiểm trước khi nộp
 
 - [ ] Tên repo đúng mẫu ở mục 1, link mở được (Private thì đã mời coach).
+- [ ] Link trên LMS là link commit có SHA, mở ra đúng commit cuối của bạn.
 - [ ] Mở repo trên GitHub, thấy đủ các file ở mục 2.
 - [ ] `frames_A.txt` và `frames_B.txt` vẫn có dòng `seed_tag=` do lệnh bước 1 sinh ra.
 - [ ] `ref_B.json` có đủ 12 frame của `frames_B.txt`, được kéo về **sau khi** đã Save trên CVAT.
 - [ ] Đã chạy `python pp_prelabel.py --data <Data-VF> --frames d14_<ID>/frames_B.txt --config d14_<ID>/best_config.json --gt d14_<ID>/ref_B.json` và ghi số xóa/thêm/sửa vào báo cáo.
-- [ ] Báo cáo có dự đoán 5b ghi **trước** khi chạy sweep, có 1 ảnh compare và phần đối chiếu.
+- [ ] Đã commit và push mục 1 báo cáo (dự đoán 5b) **trước** khi chạy sweep, ví dụ `git commit -m "5b: dự đoán"`.
+- [ ] Báo cáo có 1 ảnh compare và phần đối chiếu.

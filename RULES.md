@@ -21,8 +21,9 @@
 ## Nộp muộn và sửa sau deadline
 
 - Deadline: 12:00 trưa ngày hôm sau ngày lab (GMT+7), xem [SUBMISSION.md](SUBMISSION.md).
-- Bài được chấm theo commit cuối cùng trước deadline. Commit sau deadline không được tính, trừ khi coach cho phép.
-- Nộp muộn bị trừ điểm theo quy định chung của khóa.
+- Bài được chấm theo commit có SHA bạn nộp trên LMS. Coach checkout đúng SHA đó; commit đẩy lên sau mà không cập nhật link LMS không được tính.
+- Link commit nộp hoặc cập nhật trên LMS sau deadline là bài nộp muộn: chấm commit đó và trừ điểm theo quy định chung. Commit có thời điểm sau deadline cũng tính là muộn dù link LMS cập nhật trước.
+- Không force-push hay xóa commit đã nộp. Nếu coach không mở được SHA trên LMS, bài coi như chưa nộp đúng.
 
 ## Bảo mật
 

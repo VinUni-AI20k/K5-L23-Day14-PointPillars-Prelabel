@@ -1,6 +1,6 @@
 # Day 14 — Pre-label 3D bằng PointPillars pre-trained (VF LiDAR)
 
-**Bài cá nhân.** Thời lượng: cài đặt ≈10 phút trước buổi; buổi giảng sáng; lab buổi chiều. Nộp link repo GitHub lên LMS trước **12:00 trưa hôm sau** (GMT+7).
+**Bài cá nhân.** Thời lượng: cài đặt ≈10 phút trước buổi; buổi giảng sáng; lab buổi chiều. Nộp link commit GitHub (có SHA) lên LMS trước **12:00 trưa hôm sau** (GMT+7).
 
 Tài liệu: [SUBMISSION.md](SUBMISSION.md) (nộp gì, nộp ở đâu) · [RUBRIC.md](RUBRIC.md) (chấm điểm) · [CHECKPOINTS.md](CHECKPOINTS.md) (tự kiểm từng bước) · [RULES.md](RULES.md) (quy định) · [report/individual/MSSV_HoTen.md](report/individual/MSSV_HoTen.md) (template báo cáo)
 
