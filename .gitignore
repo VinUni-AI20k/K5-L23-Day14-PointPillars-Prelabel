@@ -4,5 +4,6 @@ out/
 nop/
 xem/
 __pycache__/
+.venv/
 *.zip
 .env
