@@ -1,6 +1,6 @@
 # Điểm cộng Day 14 (tùy chọn, tối đa +10)
 
-Chỉ làm sau khi đã nộp đủ phần bắt buộc (12 frame tập B và báo cáo). Mỗi hướng làm **tối đa 45 phút**; hết giờ thì dừng và viết lại mình đã làm tới đâu. Điểm cộng không bù cho phần bắt buộc còn thiếu.
+Chỉ làm sau khi đã có đủ phần bắt buộc theo checklist trong [`SUBMISSION.md`](../SUBMISSION.md) (`ref_B.json` của 12 frame tập B và báo cáo). Mỗi hướng làm **tối đa 45 phút**; hết giờ thì dừng và viết lại mình đã làm tới đâu. Điểm cộng không bù cho phần bắt buộc còn thiếu.
 
 ## Hướng 1 (chính, tối đa +7): đo thao tác sửa nhãn
 
