@@ -142,7 +142,7 @@ def load_reference(arg: str, data: Path | None, names: list[str]) -> dict[str, l
     """Ground truth for scoring: a ``ref_*.json`` box file, or a Labels-VF folder (coach only)."""
     path = Path(arg)
     if path.is_file():
-        frames = json.loads(path.read_text(encoding="utf-8"))["frames"]
+        frames = json.loads(path.read_text(encoding="utf-8-sig"))["frames"]
         return {n: frames[n] for n in names if n in frames}
     if path.is_dir() and data is not None:
         out = {}

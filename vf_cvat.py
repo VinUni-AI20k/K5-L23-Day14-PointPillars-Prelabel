@@ -341,7 +341,7 @@ def cmd_prelabel(args) -> int:
     frames_file = Path(args.frames or d14_dir(student) / f"frames_{args.task}.txt")
     names = vf_d14.read_frame_list(str(frames_file))
     rows = vf_d14.frame_rows(Path(args.data), names)
-    boxes = json.loads(Path(args.boxes).read_text(encoding="utf-8"))["frames"] if args.boxes else {}
+    boxes = json.loads(Path(args.boxes).read_text(encoding="utf-8-sig"))["frames"] if args.boxes else {}
     missing = [n for n in names if n not in boxes]
     if args.boxes and missing:
         raise SystemExit(f"{args.boxes} thiếu frame {missing}. Chạy pp_prelabel.py với --frames {frames_file}.")
